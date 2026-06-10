@@ -2,6 +2,11 @@
 
 This project analyzes customer churn behavior using the IBM Telco Customer Churn dataset. The objective is to identify churn drivers, predict customer attrition using machine learning, and provide business insights through an interactive Power BI dashboard.
 
+## 🎯 Business Problem
+Telecommunication companies lose revenue when customers 
+discontinue services. Identifying high-risk customers enables 
+businesses to improve retention strategies and reduce churn.
+
 ## 🛠️ Tech Stack
 - Python
 - Pandas
@@ -23,6 +28,7 @@ This project analyzes customer churn behavior using the IBM Telco Customer Churn
 
 ## 📂 Dataset Description
 Dataset: IBM Telco Customer Churn Dataset
+Source: Kaggle - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 Dataset Features:
 - Customer demographics
@@ -39,7 +45,7 @@ Target Variable:
 ## 🧹 Data Preprocessing
 - Converted TotalCharges to numeric format
 - Handled missing values
-- Removed duplicate records
+- Dropped customerID (non-predictive identifier)
 - Encoded churn labels
 - Applied one-hot encoding to categorical variables
 
@@ -51,7 +57,24 @@ Target Variable:
 - Used to predict customer churn probability
 
 ## 🧪 Model Evaluation
-- Accuracy, Precision, Recall, F1-Score, Confusion Matrix, Feature Importance Analysis
+
+| Metric | Class | Score |
+|--------|-------|-------|
+| Accuracy | Overall | 79.42% |
+| Precision | No Churn | 83% |
+| Precision | Churn | 64% |
+| Recall | No Churn | 90% |
+| Recall | Churn | 50% |
+| F1-Score | No Churn | 87% |
+| F1-Score | Churn | 56% |
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Feature Importance Analysis
+
+![Feature Importance](images/feature_importance.png)
 
 ## 📈 Key Insights
 - Month-to-month customers exhibited the highest churn rates
@@ -72,11 +95,9 @@ Target Variable:
 
 Dashboard Features:
 - KPI Cards
-- Churn Rate Analysis
-- Revenue at Risk Tracking
-- Customer Segmentation
+- Churn Analysis Charts
 - Interactive Slicers
-- Business Recommendations
+- Business Insights & Recommendations
 
 ## 💡 Business Recommendations
 - Encourage customers to switch to long-term contracts
@@ -88,6 +109,7 @@ Dashboard Features:
 1. Clone the repository: git clone <repository-url>
 2. Install dependencies: pip install -r requirements.txt
 3. Run the Python analysis: python churn_project.py
+4. Open the Power BI dashboard: Open dashboard/churn_dashboard.pbix in Power BI Desktop
 
 ## 🔮 Future Improvements
 - Deploy churn prediction using Streamlit
