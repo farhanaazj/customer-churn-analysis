@@ -27,8 +27,8 @@ businesses to improve retention strategies and reduce churn.
 - Generate actionable business recommendations
 
 ## 📂 Dataset Description
-Dataset: IBM Telco Customer Churn Dataset
-Source: Kaggle - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+- Dataset: IBM Telco Customer Churn Dataset
+- Source: Kaggle - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 Dataset Features:
 - Customer demographics
