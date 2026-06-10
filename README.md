@@ -106,7 +106,7 @@ Dashboard Features:
 - Launch targeted retention campaigns for high-risk customers
 
 ## ▶️ How to Run
-1. Clone the repository: git clone <repository-url>
+1. Clone the repository: git clone https://github.com/farhanaazj/customer-churn-analysis
 2. Install dependencies: pip install -r requirements.txt
 3. Run the Python analysis: python churn_project.py
 4. Open the Power BI dashboard: Open dashboard/churn_dashboard.pbix in Power BI Desktop
